@@ -1,4 +1,4 @@
-# This is an early Work In Progress of ArcheOS website
+# An early Work In Progress of ArcheOS website
 
 For now it's based on node.js ecosystem (for experimental purposes).
 
