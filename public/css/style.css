@@ -2,9 +2,11 @@
 /* Vars */
 /* Orange from "Torro" logo */
 /* not really useful to set it as a variable for now. but who knows...*/
-/* rules */
+/* Rules */
 * {
   /* Lato is provided by google fonts for now. Fallback to any SS font */
+
+  /* Lato is under SIL Open Font License, 1.1 which is DSFG Compatible */
 
   font-family: "Lato", sans-serif;
 }
@@ -32,6 +34,9 @@ ul.menu-foot {
 }
 .torro-color {
   color: #fea000;
+}
+.notFound {
+  margin-top: 10px;
 }
 footer {
   text-align: center;
