@@ -1,8 +1,31 @@
-archeos-website
-===============
+# This is an early Work In Progress of ArcheOS website
 
-Not to be included in the distro... :-)
+For now it's based on node.js ecosystem (for experimental purposes).
 
-This repository contains static files for ArcheOS website (http://www.archeos.eu/)
+## Development
 
-The template is based on Bootstrap (http://twitter.github.com/bootstrap/)
+Node.js
+http://nodejs.org/
+
+Grunt
+```shell
+# npm install -g grunt-cli
+```
+
+Bower
+```shell
+# npm install -g bower
+```
+
+Install dependencies
+```shell
+$ npm install
+$ bower install
+```
+
+Run development server
+```shell
+$ run server
+```
+
+Open your browser at http://localhost:3000
