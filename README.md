@@ -4,15 +4,16 @@ For now it's based on node.js ecosystem (for experimental purposes).
 
 ## Development
 
-Node.js
-http://nodejs.org/
+[Download the repository](https://github.com/archeos/archeos-website/archive/develop.zip) and unzip
 
-Grunt
+Install [Node.js](nodejs.org) then run the following from the command line in the unzipped directory:
+
+[Grunt](http://gruntjs.com/)
 ```shell
 # npm install -g grunt-cli
 ```
 
-Bower
+[Bower](http://bower.io/)
 ```shell
 # npm install -g bower
 ```
@@ -25,7 +26,7 @@ $ bower install
 
 Run development server
 ```shell
-$ run server
+$ app node
 ```
 
 Open your browser at http://localhost:3000
