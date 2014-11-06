@@ -18,8 +18,14 @@ a.foot {
   text-decoration: none;
 }
 .jumbotron {
-  background: url("../img/ciceroRecons.png") no-repeat;
-  color: white;
+  background: url("../img/ciceroTerran.jpg") no-repeat;
+}
+.jumbotron h1 {
+  color: #ffffff;
+}
+.jumbotron p {
+  font-weight: 400;
+  color: #F0F0F0;
 }
 ul.menu-foot {
   list-style-type: none;
