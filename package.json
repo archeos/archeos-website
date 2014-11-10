@@ -1,7 +1,11 @@
 {
   "name": "archeos-website",
-  "version": "0.0.1",
+  "description": "website for ArcheOS",
+  "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
   "scripts": {
     "start": "node app"
   },
