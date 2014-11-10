@@ -15,11 +15,10 @@ exports.init = function (app) {
   });
 
 
-  /**
-   * Options for WS call
-   */
-  
+
+  // FB user Id
   var ArcheOSUser = "258977573543"
+  // Options for WS call
   var options = {
    hostname: 'graph.facebook.com',
    port: 443,
@@ -30,26 +29,45 @@ exports.init = function (app) {
   /**
    * News
    */
-  app.get('/news', function (req, res){
+  app.get('/news', function (req, res) {
+    // "buffer," the cooncat of all http responses
     var buffer = '';
-    var wsReq = https.request(options, function (wsRes){
-      wsRes.on('data', function(chunk){
+    
+    // Make the http request
+    var wsReq = https.request(options, function (wsRes) {
+      
+      // Put each chunck emitted in the buffer 
+      wsRes.on('data', function(chunk) {
             buffer+=chunk;
         });
 
+      // Eventually, we parse and filter the buffer and write the response
       wsRes.on('end', function() {
-        // try catch
-        var msg = JSON.parse(buffer).data.filter(function(m){
-          return m.from.id == ArcheOSUser;
-        });
+        
+        // Parse and filter the buffer
+        var msg = JSON.parse(buffer)
+                    .data
+                    .filter(function(msg) {
+                      // This filter is little bit hacky. Needed since I use
+                      // an App token for now
+                      return (msg.from.id == ArcheOSUser && msg.message);
+                  }).map(function(msg) {
+                    if(msg.link)
+                      msg.message = msg.message
+                                      .replace(msg.link, "")
+                                      .replace(/[.,:?!]+\s?$/m, "");
+                    return msg
+                  });
 
+        // Render the response
         res.render('news', {
           title: 'Archeos - News',
           news: msg
         });
+
       });
     });
-    // on error
+    // on error => auth error + network error
     wsReq.end();
   });
 };
