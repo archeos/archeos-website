@@ -14,13 +14,16 @@ exports.init = function (app) {
     });
   });
 
+
   /**
    * Options for WS call
    */
+  
+  var ArcheOSUser = "258977573543"
   var options = {
    hostname: 'graph.facebook.com',
    port: 443,
-   path: '/' + ArcheOSUser + '/feed/?access_token=' + token,
+   path: '/' + ArcheOSUser + '/feed/?access_token=' + process.env.FB_TOKEN,
    method: 'GET'
   };
 
