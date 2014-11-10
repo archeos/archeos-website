@@ -41,8 +41,11 @@ ul.menu-foot {
 #torro-logo {
   float: left;
 }
-.torro-color {
+.head-foot {
   color: #fea000;
+  border-bottom: 1px dotted white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .notFound {
   margin-top: 10px;
@@ -53,8 +56,4 @@ footer {
   padding: 20px 20px 20px 20px;
   color: #9d9d9d;
   background-color: #222222;
-}
-hr.dotted {
-  border-style: dotted;
-  margin: 0.5em;
 }

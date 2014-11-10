@@ -4,13 +4,13 @@ html(lang="en")
   include head
   body
       include nav
-      div.container(style="padding-top: 75px") // TODO: rm
+      div.containe
         h1 Latest News
         ul
           for n in news
             li
               ul
-                li= n.message // test
+                li= n.message
                 li= Date(n.created_time).toString()
                 hr
       include footer
