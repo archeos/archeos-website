@@ -1,0 +1,59 @@
+/* Import bootstrap variables */
+/* Vars */
+/* Orange from "Torro" logo */
+/* not really useful to set it as a variable for now. but who knows...*/
+/* Rules */
+* {
+  /* Lato is provided by google fonts for now. Fallback to any SS font */
+
+  /* Lato is under SIL Open Font License, 1.1 which is DSFG Compatible */
+
+  font-family: "Lato", sans-serif;
+}
+body {
+  font-weight: 350;
+  background-color: #F0F0F0;
+}
+a.foot {
+  text-decoration: none;
+}
+.jumbotron {
+  background: url("../img/ciceroTerran.jpg") no-repeat;
+}
+.jumbotron h1 {
+  color: #ffffff;
+}
+.jumbotron p {
+  font-weight: 400;
+  color: #F0F0F0;
+}
+ul.menu-foot {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#cont {
+  text-align: justify;
+}
+#couv {
+  padding: 75px 0 0 0;
+}
+#torro-logo {
+  float: left;
+}
+.head-foot {
+  color: #fea000;
+  border-bottom: 1px dotted white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.notFound {
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px 20px 20px 20px;
+  color: #9d9d9d;
+  background-color: #222222;
+}
