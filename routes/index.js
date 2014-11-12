@@ -46,16 +46,20 @@ exports.init = function (app) {
         
         // Parse and filter the buffer
         var msg = JSON.parse(buffer)
-                    .data
-                    .filter(function(msg) {
+                      .data
+                      .filter(function(msg) {
+                      
                       // This filter is little bit hacky. Needed since I use
                       // an App token for now
                       return (msg.from.id == ArcheOSUser && msg.message);
+                  
                   }).map(function(msg) {
+
+                    // if message is a link we can replace it
                     if(msg.link)
                       msg.message = msg.message
-                                      .replace(msg.link, "")
-                                      .replace(/[.,:?!]+\s?$/m, "");
+                                       .replace(msg.link, '')
+                                       .replace(/[.,:?!]+\s?$/m, '');
                     return msg
                   });
 
@@ -64,7 +68,6 @@ exports.init = function (app) {
           title: 'Archeos - News',
           news: msg
         });
-
       });
     });
     // on error => auth error + network error

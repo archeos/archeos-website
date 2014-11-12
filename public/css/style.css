@@ -21,7 +21,7 @@ a.foot {
   background: url("../img/ciceroTerran.jpg") no-repeat;
 }
 .jumbotron h1 {
-  color: #ffffff;
+  color: #F0F0F0;
 }
 .jumbotron p {
   font-weight: 400;
@@ -36,19 +36,26 @@ ul.menu-foot {
   text-align: justify;
 }
 #couv {
-  padding: 75px 0 0 0;
+  padding: 75px 0 50px 0;
 }
 #torro-logo {
   float: left;
 }
 .head-foot {
   color: #fea000;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted #F0F0F0;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
 .notFound {
   margin-top: 10px;
+}
+.card {
+  border: 0.1em solid #222222;
+  margin-bottom: 7px;
+  padding-top: 7px;
+  background-color: white;
+  border-radius: 4px;
 }
 footer {
   text-align: center;

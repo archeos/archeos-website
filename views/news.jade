@@ -3,18 +3,16 @@ doctype 5
 html(lang="en")
   include head
   body
-      include nav
-      div.container
-        h1 Latest News
-        ul
-          for n in news
-            li
-              ul
-                //TODO + img 'origin'
-                li= Date(n.created_time).toString()
-                li= n.message
-                if n.link
-                    p See more 
-                      a(href= n.link) here 
-                hr
-      include footer
+    include nav
+    div.container#couv
+      each n, idx in news
+            div.col-md-12.col-sm-12.col-xs-12.card
+              img.img-circle.img-responsive(alt="logo ArcheOS Torro" src="img/logoTorro140.png" style="width:35px; float:left")
+              p(style='float:right') X days ago
+              p(style='padding:10px 0 0 50px') Published by ArcheOS
+              hr
+              p= n.message
+              if n.link
+                p See more 
+                  a(href= n.link) here 
+    include footer
