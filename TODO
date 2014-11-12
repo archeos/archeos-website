@@ -1,0 +1,24 @@
+Features
+========
+News cards
+----------
+- Date
+- logo + text centering
+- Add Github ?
+- Add Buildbot feed ?
+
+
+Quality
+=======
+- Inline css
+- Rename #couv => #content ?
+- split index.js
+- Rework colors (% gray)
+- Night blue instead of black ?
+- jhlint => add it in watch task too
+- Html5 semantic ?
+
+
+Build
+=====
+- replace the bower call in prod by the proper grunt call 
