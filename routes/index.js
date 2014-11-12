@@ -15,7 +15,7 @@ exports.init = function (app) {
   });
 
 
-
+  var moment = require('moment');
   // FB user Id
   var ArcheOSUser = "258977573543"
   // Options for WS call
@@ -55,6 +55,7 @@ exports.init = function (app) {
                   
                   }).map(function(msg) {
 
+                    msg.created_time = moment(msg.created_time).fromNow();
                     // if message is a link we can replace it
                     if(msg.link)
                       msg.message = msg.message
@@ -70,7 +71,7 @@ exports.init = function (app) {
         });
       });
     });
-    // on error => auth error + network error
+    // TODO: on error => auth error + network error
     wsReq.end();
   });
 };

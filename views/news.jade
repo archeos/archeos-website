@@ -5,10 +5,10 @@ html(lang="en")
   body
     include nav
     div.container#couv
-      each n, idx in news
+      for n in news
             div.col-md-12.col-sm-12.col-xs-12.card
               img.img-circle.img-responsive(alt="logo ArcheOS Torro" src="img/logoTorro140.png" style="width:35px; float:left")
-              p(style='float:right') X days ago
+              p(style='float:right')= n.created_time
               p(style='padding:10px 0 0 50px') Published by ArcheOS
               hr
               p= n.message
