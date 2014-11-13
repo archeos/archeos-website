@@ -7,10 +7,12 @@ html(lang="en")
     div.container#couv
       for n in news
             div.col-md-12.col-sm-12.col-xs-12.card
-              img.img-circle.img-responsive(alt="logo ArcheOS Torro" src="img/logoTorro140.png" style="width:35px; float:left")
-              p(style='float:right')= n.created_time
-              p(style='padding:10px 0 0 50px') Published by ArcheOS
-              hr
+              div.head-news
+                img.img-circle.img-responsive(alt="logo ArcheOS Torro" src="img/logoTorro140.png" style="width:35px; float:left")
+                p(style='float:right')= n.created_time
+                p(style='padding:10px 0 0 45px') Published by ArcheOS
+                hr
+              div.body-news
               p= n.message
               if n.link
                 p See more 

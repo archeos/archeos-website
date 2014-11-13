@@ -1,23 +1,29 @@
 Features
 ========
-News cards
-----------
-- Date
-- logo + text centering
+News
+----
 - Add Github ?
 - Add Buildbot feed ?
+- Add Documentation (archeos-manual) highlight
+
+
+News cards
+----------
+- logo + text centering
 
 
 Quality
 =======
 - Inline css
 - Rename #couv => #content ?
-- split index.js
 - Rework colors (% gray)
 - Night blue instead of black ?
 - Html5 semantic ?
+- Error on WS calls (2 type)
+- Error 500
+- Replace the orange torro in archeos-manual by the one in this repo
 
 
 Build
 =====
-- replace the bower call in prod by the proper grunt call 
+- Replace the Bower call in prod by the proper grunt call with minified assets
