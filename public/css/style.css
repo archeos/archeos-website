@@ -35,7 +35,7 @@ ul.menu-foot {
 #cont {
   text-align: justify;
 }
-#couv {
+#main {
   padding: 75px 0 30px 0;
 }
 #torro-logo {
@@ -46,6 +46,9 @@ ul.menu-foot {
   border-bottom: 1px dotted #e0e0e0;
   padding-bottom: 2px;
   margin-bottom: 4px;
+}
+.navbar-inverse {
+  background-color: #263238;
 }
 .notFound {
   margin-top: 10px;
@@ -61,6 +64,4 @@ footer {
   text-align: center;
   margin-top: 10px;
   padding: 20px 20px 20px 20px;
-  color: #9d9d9d;
-  background-color: #222222;
 }

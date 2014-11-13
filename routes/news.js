@@ -1,5 +1,7 @@
 var https = require('https');
 var moment = require('moment');
+
+
 exports.init = function (app) {
   // FB user Id
   var ArcheOSUser = '258977573543';
@@ -25,7 +27,7 @@ exports.init = function (app) {
 
       // Eventually, we parse and filter the buffer and write the response
       wsRes.on('end', function() {
-        console.log(buffer.toString());
+        
         // Parse and filter the buffer
         var msg = JSON.parse(buffer)
                       .data

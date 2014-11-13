@@ -14,16 +14,12 @@ News cards
 
 Quality
 =======
-- Inline css
-- Rename #couv => #content ?
-- Rework colors (% gray)
-- Night blue instead of black ?
-- Html5 semantic ?
-- Error on WS calls (2 type)
+- Remove inline css
+- Rework colors (% gray % ad with dark-blue-gray)
+- Html5 semantic => section/article etc...
+- Error on WS calls (2 types)
 - Error 500
-- Replace the orange torro in archeos-manual by the one in this repo
-
 
 Build
 =====
-- Replace the Bower call in prod by the proper grunt call with minified assets
+- Replace the Bower call on Heroku by the proper grunt call with minified assets
