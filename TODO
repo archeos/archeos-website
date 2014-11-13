@@ -15,7 +15,6 @@ Quality
 - split index.js
 - Rework colors (% gray)
 - Night blue instead of black ?
-- jhlint => add it in watch task too
 - Html5 semantic ?
 
 
