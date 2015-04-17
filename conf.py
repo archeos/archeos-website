@@ -124,6 +124,7 @@ html_theme_options = {
     'navbar_links': [
         ("Info", "info"),
         ("Dowload", "download"),
+        ("GitHub", "https://github.com/archeos/", True),
         ("Documentation", "http://doc.archeos.it", True)
     ],
 
