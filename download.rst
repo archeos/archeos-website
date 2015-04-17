@@ -13,10 +13,8 @@ Be sure, before trying, to:
 Latest version
 --------------
 
-ArcheOS 5 "Theodoric"
-^^^^^^^^^^^^^^^^^^^^^
-
-**ALPHA VERSION**
+ArcheOS 5 "Theodoric" ALPHA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------------------------------+------+----------------------------------+
 |          ISO                       | Arch |             MD5SUM               |
@@ -58,13 +56,12 @@ Build it yourself
 
 If you want to try to build ArcheOS yourself you can try follow `these instructions`_ 
 
+
 Older versions
 --------------
 
 ArcheOS 4 "Caesar"
 ^^^^^^^^^^^^^^^^^^
-
-**BETA VERSION**
 
 Select your nearest mirror:
 
