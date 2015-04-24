@@ -66,7 +66,7 @@ Have you something to say that cannot be told in ML? Write to us directly!
 * Giuseppe Naponiello: beppenapo[~at~]gmail.com
 
 Friends
-^^^^^^^
+^^^^^^^ 
 
 Here's a list of helper/collaborators/friends that help us keeping ArcheOS a great distribution!
 
