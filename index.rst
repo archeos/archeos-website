@@ -39,7 +39,7 @@ If you have some questions or suggestions, or if you want to contact us, just do
 Mailing list
 ^^^^^^^^^^^^
 
-A mailing list (in italian language) is active for who wanto to collaborate/discuss/keep informed about ArcheOS. 
+A mailing list (in Italian language) is active for who wanto to collaborate/discuss/keep informed about ArcheOS. 
 To subscribe just go to http://lists.linux.it/listinfo/archeos and follow the instructions.
 
 An english language mailing list is for developers: check this page if you are interested: http://lists.linux.it/listinfo/archeos-dev
