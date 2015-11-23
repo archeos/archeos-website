@@ -125,7 +125,7 @@ html_theme_options = {
         ("Info", "info"),
         ("Dowload", "download"),
         ("GitHub", "https://github.com/archeos/", True),
-        ("Documentation", "http://doc.archeos.it", True)
+        ("Documentation", "http://doc.archeos.it", True),
         ("Blog", "http://arc-team-open-research.blogspot.it/", True)
     ],
 
