@@ -126,6 +126,7 @@ html_theme_options = {
         ("Dowload", "download"),
         ("GitHub", "https://github.com/archeos/", True),
         ("Documentation", "http://doc.archeos.it", True)
+        ("Blog", "http://arc-team-open-research.blogspot.it/", True)
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
